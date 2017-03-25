@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>bOOBIFY</title>
+    <!--Boostrap's CSS-->
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Fake loader plugin CSS file -->
+    <link rel="stylesheet" type="text/css" href="./node_modules/jquery/plugins/fakeload/fakeloader.css">
+   
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="site_one/css/style.css">
+    <!--jQuery JS file-->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!--Bootstrap JS File-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- fake loader plugin JS file -->
+    <script src ="./node_modules/jquery/plugins/fakeload/fakeloader.js"></script>
+    
+    <!--Custom JS File-->
+    <script src="./site_one/js/main.js"></script>
+</head>
+
+<!-- Website Content -->
+
+<body>
+    <!-- facebook <SDK></SDK> -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7&appId=281416065584694";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- fake loader initialiser -->
+    <div id="fakeloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner"><div class="loader"></div></div></div></div>
+
+    <div class="container" id="page-container">
+        
+<!-- A nice Title -->
+        <h1 id="app-name">
+            <b>Hobby-Me</b>
+        </h1>
+
+<!-- A nice description -->
+        <h2 id="page-header">
+            Find some pictures you like based off your interests!
+        </h2>
+
+<!-- A nice Start Button -->
+        <div class="btn-wrapper">
+            <button onclick="start()" class="btn btn-default btn-lg start">
+                    Lets start this great quiz!
+                </button>
+        </div>
+
+<!-- here is the quiz -->
+        <div id="quiz-container">
+
+<!-- Scale -->
+            <div class="row">
+                <p class="col-md-5"></p>
+                <p class="col-md-7" id="scale">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hate it (1)
+                    <-----------------> (5) Love it </br>
+                </p>
+            </div>
+            </br>
+
+<!-- Questions -->
+            <div class="row">
+                <p class="question col-md-6">1. How much do you like sports? </p>
+                <form class="col-md-6" id = "sport">
+                    <input  type="radio" name="sport" value="1"><label>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="sport" value="2"><label>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="sport" value="3"><label>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="sport" value="4"><label>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="sport" value="5"><label>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                </form>
+            </div>
+            </br>
+            <div class="row">
+                <p class="question col-md-6">2. How much do you like computer stuff? </p>
+                <form class="answers col-md-6" id = "tech">
+                    <input  type="radio" name="tech" value="1"><label>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="tech" value="2"><label>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="tech" value="3"><label>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="tech" value="4"><label>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="tech" value="5"><label>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                </form>
+            </div>
+            </br>
+            <div class="row">
+                <p class="question col-md-6">3. How much do you like Visual Art? </p>
+                <form class="answers col-md-6" id = "art">
+                    <input  type="radio" name="art" value="1"><label>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="art" value="2"><label>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="art" value="3"><label>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="art" value="4"><label>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="art" value="5"><label>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                </form>
+            </div>
+            </br>
+            <div class="row">
+                <p class="question col-md-6">4. How much do you like Music? </p>
+                <form class="answers col-md-6" id = "music">
+                    <input  type="radio" name="music" value="1"><label>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="music" value="2"><label>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="music" value="3"><label>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="music" value="4"><label>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="music" value="5"><label>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                </form>
+            </div>
+            </br>
+            <div class="row">
+                <p class="question col-md-6">5. How much do you like Travelling? </p>
+                <form class="answers col-md-6" id = "travel">
+                    <input  type="radio" name="travel" value="1"><label>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="travel" value="2"><label>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="travel" value="3"><label>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="travel" value="4"><label>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                    <input  type="radio" name="travel" value="5"><label>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                </form>
+            </div>
+<!-- End of Questions -->
+
+<!-- End Quiz button -->
+            <div class="btn-wrapper">
+                <button onclick="load();end()" class="btn btn-default btn-lg end">
+                    End the great Quiz!
+                </button>
+            </div>
+
+
+
+        </div>
+
+        <!-- this is where the end photos go -->
+        <div id ="results">
+        
+        <div
+            class="fb-like"
+            data-share="true"
+            data-width="450"
+            data-show-faces="true">
+        </div>
+            <!-- facebook button -->
+<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+</div>
+
+    </div>
+
+</body>
+
+</html>

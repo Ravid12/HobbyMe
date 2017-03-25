@@ -1,0 +1,59 @@
+html { 
+    background: url("http://3.bp.blogspot.com/-4V5aM7OxF7Y/Ti51zkuRv2I/AAAAAAAABZo/tYmutrwqxNg/s1600/cute+cat+wallpaper+hd+2.jpg") no-repeat center center fixed; 
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    color: white;
+    background: transparent;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+#app-name {
+    font-size:100px;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+#page-header {
+    font-size: 48px;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-shadow:
+       1px 1px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+#page-container {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-wrapper{
+    padding: 20px 0;
+}
+
+#scale{
+    text-align: center;
+}
+.box{
+    background-color:#f7f7f7;
+    border: 2px solid #ccc;
+    margin:20px;
+    display:inline-block;
+}
+.
